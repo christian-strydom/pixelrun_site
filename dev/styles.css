@@ -15,7 +15,7 @@ h1, p {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.7em;
 }
 
 p {
@@ -61,4 +61,10 @@ body {
 .small-image {
   height: 60px;
   width: 60px;
+}
+
+.medium-image {
+  margin-top: 60px;
+  height: 65px;
+  width: 65px;
 }
