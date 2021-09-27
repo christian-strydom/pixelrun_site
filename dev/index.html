@@ -13,8 +13,20 @@
 <body>
 
   <script>
-    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    if (isIOS) {
+    function isIOS() {
+      return [
+          'iPad Simulator',
+          'iPhone Simulator',
+          'iPod Simulator',
+          'iPad',
+          'iPhone',
+          'iPod'
+        ].includes(navigator.platform)
+        // iPad on iOS 13 detection
+        ||
+        (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+    }
+    if (isIOS()) {
       alert('This is a IOS device');
     } else {
       alert('This is Not a IOS device');
@@ -26,8 +38,6 @@
     <div class="row">
       <h1>Contribute to Pixel Run</h1>
     </div>
-
-
 
     <a href="https://github.com/christian-strydom/pixelrun">
       <div class="row">
