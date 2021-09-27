@@ -11,7 +11,12 @@
 <body>
   <div class="flex-container">
 
-
+    <script>
+      var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      if (isIOS) {
+        alert('Please download Pixelrun from the IOS store');
+      }
+    </script>
 
     <div class="row">
       <h1>Contribute to Pixel Run</h1>
