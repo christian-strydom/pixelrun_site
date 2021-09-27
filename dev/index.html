@@ -12,8 +12,10 @@
   <div class="flex-container">
 
     <script>
-      var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-      if (isIOS) {
+      function isIOSDevice() {
+        return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+      }
+      if (isIOSDevice()) {
         alert('Please download Pixelrun from the IOS store');
       }
     </script>
