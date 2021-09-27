@@ -8,30 +8,7 @@
   <link id='-gd-engine-icon' rel='icon' type='image/png' href='../favicon.png' />
 </head>
 
-
-
 <body>
-
-  <script>
-    function isIOS() {
-      return [
-          'iPad Simulator',
-          'iPhone Simulator',
-          'iPod Simulator',
-          'iPad',
-          'iPhone',
-          'iPod'
-        ].includes(navigator.platform)
-        // iPad on iOS 13 detection
-        ||
-        (navigator.userAgent.includes("Mac") && "ontouchend" in document)
-    }
-    if (isIOS()) {
-      alert('This is a IOS device');
-    } else {
-      alert('This is Not a IOS device');
-    }
-  </script>
 
   <div class="flex-container">
 
